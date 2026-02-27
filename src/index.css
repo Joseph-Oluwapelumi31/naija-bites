@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+/* Base styles */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-slate-50 text-slate-900 antialiased;
+  }
+}
+
+/* Component layer */
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center rounded-xl px-5 py-3 text-sm font-semibold transition cursor-pointer;
+  }
+
+  .btn-primary {
+    @apply bg-rose-600 text-white hover:bg-rose-700 cursor-pointer;
+  }
+
+  .btn-secondary {
+    @apply border border-slate-300 bg-white hover:bg-slate-100 cursor-pointer;
+  }
+  .container {
+  @apply max-w-6xl mx-auto px-4;
+  }
+}
